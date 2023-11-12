@@ -30,12 +30,12 @@ export const animationNumber = (element, number) => {
   const animate = () => {
     currentFrame += 1;
     const newNumber = initialNumber + increment * currentFrame;
-    element.textContent = `${newNumber.toLocaleString("RU-ru")} ₽`;
+    element.textContent = `${newNumber.toLocaleString("RU-ru")} €`;
 
     if (currentFrame < totalFrame) {
       requestAnimationFrame(animate);
     } else {
-      element.textContent = `${number.toLocaleString("RU-ru")} ₽`;
+      element.textContent = `${number.toLocaleString("RU-ru")} €`;
     }
   };
 

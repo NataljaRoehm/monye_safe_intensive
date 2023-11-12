@@ -1,5 +1,5 @@
 
-import { animationNumber, convertStringNumber } from "./helpers.js";
+import { animationNumber, convertStringNumber } from "./helper.js";
 import { getData, postData } from "./service.js";
 
 const financeForm = document.querySelector(".finance__form");
